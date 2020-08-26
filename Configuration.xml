@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Config>
+  <!-- Logger -->
+  <Logs>
+    <Log id = "Debug"   value = "true"/>
+    <Log id = "Info"    value = "true" />
+    <Log id = "Warn"    value = "true" />
+    <Log id = "Error"   value = "true"/>
+    <Log id = "Fatal"   value = "true"/>
+  </Logs>
+  <ScreenSize>
+    <Screen id = "Width" value = "768"/>
+    <Screen id = "Height" value = "720"/>
+
+    <!-- <Screen id = "Width" value = "768"/>
+    <Screen id = "Height" value = "720"/> -->
+  </ScreenSize>
+</Config>
