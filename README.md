@@ -20,28 +20,26 @@ Beluga Engine is made with following libraries.
 - Tinyxml2
 
 # Features
-다음은 Beluga Engine이 현재(2020.06.01)까지 지원하는 기능들이다.
-
-## Engine Configuration
-   - XML
-## Graphics
-   - SDL2.0
-## Input
-   - Keyboard
-   - Mouse
-   - Xbox Controller
-## Music / Sound
-   - .mp3
-   - .wav
-## Actor-Component Model
-## Event System
-   - Game Event
-   - Game Process
-## Resource Compression & decompression
-   - .bin
-## Resource Cache
-## Scripting
-   - Lua
-## Collision Detection
-## Level Editing
-   - Tiled
+   ## Engine Configuration
+      - XML
+   ## Graphics
+      - SDL2.0
+   ## Input
+      - Keyboard
+      - Mouse
+      - Xbox Controller
+   ## Music / Sound
+      - .mp3
+      - .wav
+   ## Actor-Component Model
+   ## Event System
+      - Game Event
+      - Game Process
+   ## Resource Compression & decompression
+      - .bin
+   ## Resource Cache
+   ## Scripting
+      - Lua
+   ## Collision Detection
+   ## Level Editing
+      - Tiled
