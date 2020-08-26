@@ -12,7 +12,7 @@ git clone --recursive https://github.com/JunGameDev/Beluga-Engine.git
 Make sure that you do a --recursive clone to fetch all of the directories.
 
 * Visual Studio
-After you opened .sln file, make sure to set SandBox as a startup project
+   * After opened .sln file, make sure to set SandBox as a startup project.
 
 # Third-party Libraries in used
 Beluga Engine is made with following libraries.
