@@ -1,6 +1,9 @@
 # Beluga-Engine
 Handmade custom game engine library
 
+# Demonstration
+Coming soon....
+
 # Getting Started
 Visual Studio 2019 is recommended, Beluga-Engine is untested on other development environments except Windows build.
 
