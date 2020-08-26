@@ -19,7 +19,7 @@ Beluga Engine is made with following libraries.
 - Lua 5.3
 - Tinyxml2
 
-# Feature
+# Features
 다음은 Beluga Engine이 현재(2020.06.01)까지 지원하는 기능들이다.
 
 ## Engine Configuration
