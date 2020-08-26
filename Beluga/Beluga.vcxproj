@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Test|x64">
+      <Configuration>Test</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{333D74FF-FF98-3CF8-B389-C1682C8832FB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Beluga</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Beluga.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Beluga</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Beluga.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Beluga</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Test|x64'">D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Test\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Test|x64'">Beluga.dir\Test\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Test|x64'">Beluga</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Test|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;_LIB;_MBCS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_MBCS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Debug\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Debug\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Debug\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Lua\lib\x64_Debug\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Debug\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_LIB;_MBCS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_MBCS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Release\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Release\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Release\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Lua\lib\x64_Release\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Release\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Test|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SDLCheck>true</SDLCheck>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BELUGA_TEST_BUILD;NDEBUG;_LIB;_MBCS;CMAKE_INTDIR="Test";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;BELUGA_TEST_BUILD;NDEBUG;_LIB;_MBCS;CMAKE_INTDIR=\"Test\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\repos\Github\Beluga-Engine - Copy\Beluga\Include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_ttf\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\zlib\include;D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Test\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_image\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Test\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\SDL2_mixer\lib\x64\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Test\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+xcopy "D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Middleware\Lua\lib\x64_Test\*.dll" "D:\repos\Github\Beluga-Engine - Copy\Beluga\Libs\x64_Test\" /y /i /d
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/repos/Github/Beluga-Engine - Copy/Beluga/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/repos/Github/Beluga-Engine - Copy" "-BD:/repos/Github/Beluga-Engine - Copy" --check-stamp-file "D:/repos/Github/Beluga-Engine - Copy/Beluga/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\repos\Github\Beluga-Engine - Copy\CMake\Default.cmake;D:\repos\Github\Beluga-Engine - Copy\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\repos\Github\Beluga-Engine - Copy\Beluga\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/repos/Github/Beluga-Engine - Copy/Beluga/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/repos/Github/Beluga-Engine - Copy" "-BD:/repos/Github/Beluga-Engine - Copy" --check-stamp-file "D:/repos/Github/Beluga-Engine - Copy/Beluga/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\repos\Github\Beluga-Engine - Copy\CMake\Default.cmake;D:\repos\Github\Beluga-Engine - Copy\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\repos\Github\Beluga-Engine - Copy\Beluga\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Test|x64'">Building Custom Rule D:/repos/Github/Beluga-Engine - Copy/Beluga/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Test|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/repos/Github/Beluga-Engine - Copy" "-BD:/repos/Github/Beluga-Engine - Copy" --check-stamp-file "D:/repos/Github/Beluga-Engine - Copy/Beluga/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Test|x64'">D:\repos\Github\Beluga-Engine - Copy\CMake\Default.cmake;D:\repos\Github\Beluga-Engine - Copy\CMake\DefaultCXX.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Test|x64'">D:\repos\Github\Beluga-Engine - Copy\Beluga\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Test|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Actors\Actor.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Actor\Actor.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Audio\Audio.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Audio\Audio.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Core\Camera\Camera.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Core\Camera\Camera.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Core\Layers\ApplicationLayer.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Core\Layers\GameLayer.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Core\Layers\View.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Core\Layers\ApplicationLayer.cpp" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Core\Layers\GameLayer.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Log\Logging.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Log\Logging.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Core\Math\MathHelper.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Core\Math\Vector2.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Core\Util\GUID_Helper.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Events\Events.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Events\Processes.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Events\Events.cpp" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Events\Processes.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\GUI\GUI.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\GUI\GUI.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Graphics\Graphics.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Graphics\Graphics.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Input\Input.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Input\Input.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Levels\Level.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Levels\Level.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Parshing\tinyxml2.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Parshing\tinyxml2.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Physics\Physics.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Physics\PhysicsShape.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Physics\Physics.cpp" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Physics\PhysicsShape.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Resources\Resource.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Resources\Resource.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Scripting\Scripting.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Scripting\Scripting.cpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Scripting\lauxlib.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Scripting\lua.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Scripting\lua.hpp" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Scripting\luaconf.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Scripting\lualib.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Systems\HardwareResource.h" />
+    <ClInclude Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Include\Systems\System.h" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Systems\HardwareResource.cpp" />
+    <ClCompile Include="D:\repos\Github\Beluga-Engine - Copy\Beluga\Source\Systems\System.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\repos\Github\Beluga-Engine - Copy\ZERO_CHECK.vcxproj">
+      <Project>{D7AF3D12-0E66-3803-B8F5-6D55FDA97B97}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
