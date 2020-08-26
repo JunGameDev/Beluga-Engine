@@ -20,26 +20,27 @@ Beluga Engine is made with following libraries.
 - Tinyxml2
 
 # Features
-   ## Engine Configuration
-      - XML
-   ## Graphics
-      - SDL2.0
-   ## Input
-      - Keyboard
-      - Mouse
-      - Xbox Controller
-   ## Music / Sound
-      - .mp3
-      - .wav
-   ## Actor-Component Model
-   ## Event System
-      - Game Event
-      - Game Process
-   ## Resource Compression & decompression
-      - .bin
-   ## Resource Cache
-   ## Scripting
-      - Lua
-   ## Collision Detection
-   ## Level Editing
-      - Tiled
+   
+* Engine Configuration
+   * XML
+* Graphics
+   * SDL2.0
+* Input
+   * Keyboard
+   * Mouse
+   * Xbox Controller
+* Music / Sound
+   * .mp3
+   * .wav
+* Actor-Component Model
+* Event System
+   * Game Event
+   * Game Process
+* Resource Compression & decompression
+   * .bin
+* Resource Cache
+* Scripting
+   * Lua
+* Collision Detection
+* Level Editing
+   * Tiled
