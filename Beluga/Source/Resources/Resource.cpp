@@ -43,8 +43,7 @@ void ZlibFile::AddResource(std::string path, std::vector<char> data)
 
     if (result == Z_STREAM_END && stream.total_out < data.size() && stream.avail_in == 0)
     {
-        //compressedData.resize(stream.total_out);
-        compressedData = std::move(data);
+        compressedData.resize(stream.total_out);
     }
     else
     {
