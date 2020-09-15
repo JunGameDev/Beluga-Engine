@@ -16,7 +16,6 @@ Make sure that you do a --recursive clone to fetch all of the directories.
 
 # Third-party Libraries in used
 Beluga Engine is made with following libraries.
-
 - SDL2 v2.0.7
 - SDL_Image v2.0.2
 - SDL_Mixer v2.0.2
@@ -26,7 +25,7 @@ Beluga Engine is made with following libraries.
 - Tinyxml2
 
 # Features
-   
+* C++ 14/17   
 * Engine Configuration
    * XML
 * Graphics
