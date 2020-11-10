@@ -30,25 +30,6 @@ int main(int argc, char* args[])
 
     for (auto& file : files)
     {
-        // Check if it has changed.
-        //struct stat fileInfo;
-        //if (stat(file.data(), &fileInfo) != 0)
-        //{
-        //    continue;
-        //}
-        //
-        //auto now = std::chrono::system_clock::now();
-        //auto lastFileModified = std::chrono::system_clock::from_time_t(fileInfo.st_mtime);
-        //auto gap = std::chrono::duration_cast<std::chrono::minutes>(now - lastFileModified);
-        
-        //if(!foundFileModified)
-        //{
-        //    if (gap.count() < 2)
-        //    {
-        //        foundFileModified = true;
-        //    }
-        //}
-
         std::string resourcePath = path + "/" + file;
         std::fstream resourceFile(resourcePath, std::ios_base::in | std::ios_base::binary);
         if (resourceFile.is_open())
